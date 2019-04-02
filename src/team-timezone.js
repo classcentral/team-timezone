@@ -7,13 +7,13 @@ import { getState, setState } from "./helpers/state";
 export default (id, people, styleOverrides) => {
   // setup styles and event delegation (do once)
   if (styleOverrides != false) {
-    insertStyles(styleOverrides);
-  }  
+    insertStyles(styleOverrides, id);
+  }
   delegateEvents();
 
   // set state, which will re-render dom
   setState({
-    target: document.getElementById(id),
+    targetId: id,
     currentTime: moment(),
     timezone: moment.tz.guess(),
     people: people,
@@ -28,5 +28,5 @@ export default (id, people, styleOverrides) => {
         currentTime: moment(),
       });
     }
-  }, 10000);
+  }, 60000);
 };

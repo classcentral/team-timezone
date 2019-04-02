@@ -32,7 +32,7 @@ export default () => {
   return `
     <ul class="cc-ttz:people">
       ${people.map((person, index) => (`
-        <li class="cc-ttz:timezoneItem ${index === 0 ? "cc-ttz:timezoneItemLast" : ""} ${index + 1 === getState().people.length ? "cc-ttz:timezoneItemFirst" : ""}">
+        <li class="cc-ttz:timezoneItem ${index === 0 ? "cc-ttz:timezoneItemFirst" : ""} ${index + 1 === getState().people.length ? "cc-ttz:timezoneItemLast" : ""}">
           <span class="cc-ttz:timezoneDate">${ getState().currentTime.tz(person.timezone).format("MMM D") }</span>
           <h3 class="cc-ttz:timezoneTime">${ getState().currentTime.tz(person.timezone).format("h:mm a") }</h3>
           <span class="cc-ttz:timezoneOffset">${getOffsetCopy(person.diffInHours)}</span>

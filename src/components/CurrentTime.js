@@ -4,7 +4,6 @@ import { getState } from "../helpers/state";
 export default () => (`
   <div class="cc-ttz:currentContainer" ${getState().editing ? 'style="display: none;"' : ""}>
     <h2 class="cc-ttz:currentTime">
-      ${ClockIcon}
       ${getState().currentTime.format("h:mm a")}
 
       ${getState().showingCustom ?

@@ -1,4 +1,3 @@
-import ClockIcon from "./ClockIcon";
 import { getState } from "../helpers/state";
 
 export default () => (`

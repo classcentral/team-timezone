@@ -6,6 +6,7 @@ export default () => {
   	if (event.target.matches('.cc-ttz\\:enterTime')) {
       event.preventDefault();
       setState({ editing: true });
+      document.getElementsByClassName("cc-ttz:formInput")[0].focus();
   	}
   	if (event.target.matches('.cc-ttz\\:cancel')) {
       event.preventDefault();

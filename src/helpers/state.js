@@ -13,6 +13,6 @@ export const setState = (nextState) => {
     ...currentState,
     ...nextState,
   })
-  
-  getState().target.innerHTML = Layout();
+
+  document.getElementById(getState().targetId).innerHTML = Layout();
 };
