@@ -1,0 +1,20 @@
+{
+  "name": "@classcentral/team-timezone",
+  "version": "0.1.0-alpha",
+  "description": "Team Timezone",
+  "author": "Class Central, Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/classcentral/team-timezone"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "moment-timezone": "^0.5.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "parcel build ./src/team-timezone.js -d ./dist",
+    "start": "parcel ./example/index.html -d ./public"
+  },
+  "main": "dist/team-timezone.js"
+}
