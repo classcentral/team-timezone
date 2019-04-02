@@ -2,9 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/@classcentral/team-timezone.svg)](https://www.npmjs.org/package/@classcentral/team-timezone)
 
-The Class Central Team Timezone package allows you to install a simple timezone management tool for distributed teams. It can be installed and used however you wish.
-
-Please note, that this is currently an alpha pre-release.
+Team Timezone allows you to install a simple timezone management tool for distributed teams. Please note, that this is currently an alpha pre-release.
 
 ## Installation
 
