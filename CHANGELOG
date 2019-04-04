@@ -1,5 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2019-04-02
+## [0.1.0-alpha] - 2019-04-02
 - Initial alpha release
+
+## [0.1.0-alpha.1] - 2019-04-04
+- Fix major bugs preventing library import/require due to a build failure
+- Use developit/microbundle instead of parcel to ensure builds are properly structured for library use
+- Restructure state/layout/render setup to avoid circular dependency warnings

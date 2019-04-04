@@ -1,8 +1,8 @@
 import moment from "moment-timezone/builds/moment-timezone-with-data-2012-2022.min";
+import Layout from "./components/Layout";
 import insertStyles from "./helpers/insertStyles";
 import delegateEvents from "./helpers/delegateEvents";
 import { getState, setState } from "./helpers/state";
-
 
 export default (id, people, styleOverrides) => {
   // setup styles and event delegation (do once)
@@ -13,6 +13,7 @@ export default (id, people, styleOverrides) => {
 
   // set state, which will re-render dom
   setState({
+    Layout,
     targetId: id,
     currentTime: moment(),
     timezone: moment.tz.guess(),
