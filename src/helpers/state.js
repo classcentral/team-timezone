@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import render from "./render";
 
 // rudimentary state management
 const state = [{}];
@@ -14,5 +14,5 @@ export const setState = (nextState) => {
     ...nextState,
   })
 
-  document.getElementById(getState().targetId).innerHTML = Layout();
+  render(getState().targetId, getState().Layout);
 };

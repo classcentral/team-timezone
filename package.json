@@ -1,6 +1,6 @@
 {
   "name": "@classcentral/team-timezone",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "description": "Team Timezone",
   "author": "Class Central, Inc.",
   "repository": {
@@ -11,10 +11,15 @@
   "dependencies": {
     "moment-timezone": "^0.5.23"
   },
-  "devDependencies": {},
-  "scripts": {
-    "build": "parcel build ./src/team-timezone.js -d ./dist",
-    "start": "parcel ./example/index.html -d ./public"
+  "devDependencies": {
+    "microbundle": "^0.11.0"
   },
-  "main": "dist/team-timezone.js"
+  "source": "src/team-timezone.js",
+  "main": "dist/team-timezone.js",
+  "module": "dist/team-timezone.mjs",
+  "unpkg": "dist/team-timezone.umd.js",
+  "scripts": {
+    "build:dist": "microbundle",
+    "dev": "microbundle watch -o ./public"
+  }
 }
