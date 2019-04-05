@@ -1,6 +1,6 @@
 {
   "name": "@classcentral/team-timezone",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Team Timezone",
   "author": "Class Central, Inc.",
   "repository": {
@@ -11,15 +11,17 @@
   "dependencies": {
     "moment-timezone": "^0.5.23"
   },
-  "devDependencies": {
-    "microbundle": "^0.11.0"
-  },
-  "source": "src/team-timezone.js",
-  "main": "dist/team-timezone.js",
-  "module": "dist/team-timezone.mjs",
-  "unpkg": "dist/team-timezone.umd.js",
+  "main": "lib/team-timezone.js",
   "scripts": {
-    "build:dist": "microbundle",
-    "dev": "microbundle watch -o ./public"
+    "build:lib": "webpack --config webpack.config.lib",
+    "build:dist": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-serve": "^3.0.0"
   }
 }

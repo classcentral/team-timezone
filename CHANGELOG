@@ -8,3 +8,6 @@ All notable changes to this project will be documented in this file.
 - Fix major bugs preventing library import/require due to a build failure
 - Use developit/microbundle instead of parcel to ensure builds are properly structured for library use
 - Restructure state/layout/render setup to avoid circular dependency warnings
+
+## [0.1.0-alpha.2] - 2019-04-05
+- Use wepback instead to have more control over build process
