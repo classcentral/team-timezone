@@ -10,4 +10,4 @@ All notable changes to this project will be documented in this file.
 - Restructure state/layout/render setup to avoid circular dependency warnings
 
 ## [0.1.0-alpha.2] - 2019-04-05
-- Use wepback instead to have more control over build process
+- Use webpack instead to have more control over the build process
