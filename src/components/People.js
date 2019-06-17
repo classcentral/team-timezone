@@ -15,7 +15,7 @@ const sortAndCalculateTimezones = () => {
     const personOffset = getState().currentTime.tz(person.timezone).utcOffset();
     return {
       ...person,
-      diffInHours: (localOffset - personOffset) / 60,
+      diffInHours: (personOffset - localOffset) / 60,
     }
   });
 
@@ -32,7 +32,7 @@ export default () => {
   return `
     <ul class="cc-ttz:people">
       ${people.map((person, index) => (`
-        <li class="cc-ttz:timezoneItem ${index === 0 ? "cc-ttz:timezoneItemFirst" : ""} ${index + 1 === getState().people.length ? "cc-ttz:timezoneItemLast" : ""}">
+        <li class="cc-ttz:timezoneItem ${person.diffInHours === 0 ? "cc-ttz:timezoneItemLocal" : ""} ${index === 0 ? "cc-ttz:timezoneItemFirst" : ""} ${index + 1 === getState().people.length ? "cc-ttz:timezoneItemLast" : ""}">
           <span class="cc-ttz:timezoneDate">${ getState().currentTime.tz(person.timezone).format("MMM D") }</span>
           <h3 class="cc-ttz:timezoneTime">${ getState().currentTime.tz(person.timezone).format("h:mm a") }</h3>
           <span class="cc-ttz:timezoneOffset">${getOffsetCopy(person.diffInHours)}</span>
