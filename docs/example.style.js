@@ -27,6 +27,7 @@ const css = {
     // people / timezone items
     people: ``,
     timezoneItem: ``,
+    timezoneItemLocal: ``,
     timezoneItemLast: ``,
     timezoneItemFirst: ``,
     timezoneDate: ``,

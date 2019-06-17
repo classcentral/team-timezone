@@ -128,8 +128,11 @@ const style = (props) => {
       width: 16.667%;
       list-style: none;
       border-right: 1px solid #F0F0F0;
-      padding: 0 25px;
+      padding: 15px 25px;
       box-sizing: border-box;
+    `,
+    timezoneItemLocal: `
+      background: #fff9ee;
     `,
     timezoneItemLast: `
       border: none;
