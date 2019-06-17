@@ -11,3 +11,8 @@ All notable changes to this project will be documented in this file.
 
 ## [0.1.0-alpha.2] - 2019-04-05
 - Use webpack instead to have more control over the build process
+
+## [0.1.0-alpha.3] - 2019-06-17
+- Fix offset bug
+- Add local time style differentiator
+- Fix lib build output
