@@ -16,3 +16,6 @@ All notable changes to this project will be documented in this file.
 - Fix offset bug
 - Add local time style differentiator
 - Fix lib build output
+
+## [0.1.0-alpha.4] - 2021-01-13
+- Dependency audit
