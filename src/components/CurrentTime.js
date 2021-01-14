@@ -4,10 +4,10 @@ import { getState } from "../helpers/state";
 export default () => (`
   <div class="cc-ttz:currentContainer" ${getState().editing ? 'style="display: none;"' : ""}>
     <h2 class="cc-ttz:currentTime">
-      ${getState().currentTime.format("h:mm a")}
+      ${getState().currentTime.format("h:mma")}
 
       ${getState().showingCustom ?
-        `<button class="cc-ttz:cancel">Clear</button>` :
+        `<button class="cc-ttz:buttonClear">Clear</button>` :
         `<button class="cc-ttz:enterTime">Enter time</button>`
       }
     </h2>

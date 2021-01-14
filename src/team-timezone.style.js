@@ -10,17 +10,17 @@ const style = (props) => {
     header: `
       position: relative;
       height: 50px;
-      margin: 25px 0px;
+      margin: 25px 0 35px 0;
     `,
     title: `
-      font-size: 16px;
+      font-size: 21px;
       font-weight: bold;
       line-height: 100%;
       color: #121212;
       padding: 25px;
       margin: 0;
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 0px;
       vertical-align: middle;
     `,
@@ -34,6 +34,7 @@ const style = (props) => {
       font-size: 24px;
       font-weight: bold;
       line-height: 100%;
+      letter-spacing: -1px;
     `,
     currentTimezoneContainer: `
       margin: 0px;
@@ -62,19 +63,22 @@ const style = (props) => {
       vertical-align: middle;
     `,
     enterTime: `
+      margin-left: 5px;
       vertical-align: middle;
       background: #f0f0f0;
       border: 1px solid #e0e0e0;
-      padding: 5px;
+      padding: 10px 20px;
       font-weight: bold;
+      font-size: 18px;
       border-radius: 5px;
     `,
 
     form: `
-      width: 300px;
+      width: 500px;
       margin: 0 auto;
       display: flex;
       align-items: center;
+      justify-content: center;
     `,
     formFieldset: `
       border: none;
@@ -84,7 +88,7 @@ const style = (props) => {
     `,
     formInput: `
       width: 100%;
-      height: 40px;
+      height: 50px;
       font-size: 16px;
       padding: 0px 10px;
       box-sizing: border-box;
@@ -103,18 +107,29 @@ const style = (props) => {
       margin-left: 12px;
       background: #f0f0f0;
       border: 1px solid #e0e0e0;
-      padding: 5px;
+      padding: 10px 20px;
+      font-size: 14px;
       font-weight: bold;
       border-radius: 5px;
       display: inline-block;
     `,
     buttonCancel: `
-      border: none;
-      background: none;
+      background: #f0f0f0;
+      border: 1px solid #e0e0e0;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 14px;
+      display: inline-block;
     `,
     buttonClear: `
-      background: #ccc;
-      border: none;
+      background: #f0f0f0;
+      border: 1px solid #e0e0e0;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 14px;
+      display: inline-block;
     `,
 
     people: `
@@ -148,7 +163,7 @@ const style = (props) => {
     `,
     timezoneTime: `
       color: #121212;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 100%;
       padding: 0;
@@ -174,7 +189,8 @@ const style = (props) => {
       text-align: center;
       color: #8B8B8B;
       font-size: 12px;
-    `
+      line-height: 120%;
+    `,
   };
   return {
     ...css,

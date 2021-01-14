@@ -18,7 +18,7 @@ const css = {
     form: ``,
     formFieldset: ``,
     formInput: ``,
-    formButtons: ``,``
+    formButtons: ``,
     formTimezoneAbbr: ``,
     buttonApply: ``,
     buttonCancel: ``,
@@ -36,5 +36,4 @@ const css = {
     personAvatar: ``,
     personAvatarImage: ``,
     personName: ``
-  };
-}
+};

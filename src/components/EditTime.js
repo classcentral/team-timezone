@@ -3,7 +3,7 @@ import { getState } from "../helpers/state";
 export default () => (`
   <form class="cc-ttz:form" ${getState().editing ? "" : 'style="display: none;"'}>
     <fieldset class="cc-ttz:formFieldset">
-      <input value="" class="cc-ttz:formInput" type="text" placeholder="Enter time">
+      <input value="" class="cc-ttz:formInput" type="text" placeholder="Enter local time">
       <span class="cc-ttz:formTimezoneAbbr">${ getState().currentTime.tz(getState().timezone).format("z") }</span>
     </fieldset>
     <div class="cc-ttz:formButtons">
