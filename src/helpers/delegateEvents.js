@@ -8,7 +8,7 @@ export default () => {
       setState({ editing: true });
       document.getElementsByClassName("cc-ttz:formInput")[0].focus();
   	}
-  	if (event.target.matches('.cc-ttz\\:cancel')) {
+  	if (event.target.matches('.cc-ttz\\:buttonCancel') || event.target.matches('.cc-ttz\\:buttonClear')) {
       event.preventDefault();
       setState({
         editing: false,

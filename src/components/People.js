@@ -34,7 +34,7 @@ export default () => {
       ${people.map((person, index) => (`
         <li class="cc-ttz:timezoneItem ${person.diffInHours === 0 ? "cc-ttz:timezoneItemLocal" : ""} ${index === 0 ? "cc-ttz:timezoneItemFirst" : ""} ${index + 1 === getState().people.length ? "cc-ttz:timezoneItemLast" : ""}">
           <span class="cc-ttz:timezoneDate">${ getState().currentTime.tz(person.timezone).format("MMM D") }</span>
-          <h3 class="cc-ttz:timezoneTime">${ getState().currentTime.tz(person.timezone).format("h:mm a") }</h3>
+          <h3 class="cc-ttz:timezoneTime">${ getState().currentTime.tz(person.timezone).format("h:mma") } ${ moment().tz(person.timezone).format('z') }</h3>
           <span class="cc-ttz:timezoneOffset">${getOffsetCopy(person.diffInHours)}</span>
           <div class="cc-ttz:personAvatar">
             <img class="cc-ttz:personAvatarImage" src="${ person.avatar }" />
